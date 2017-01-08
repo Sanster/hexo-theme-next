@@ -16,7 +16,6 @@
 {% block content %}
 
   <div id="posts" class="posts-expand">
-  {% include '_partials/page-header.swig' %}
     {# tagcloud page support #}
     {% if page.type === "tags" %}
       <div class="tag-cloud">
@@ -36,7 +35,21 @@
           {{ list_categories() }}
         </div>
       </div>
+    {% elif page.type === 'categories_and_tags' %}
+      <div class="ct-all-page">
+        <div class="ct-category-all-page">
+          <div class="ct-category-all">
+            {{ list_categories() }}
+          </div>
+        </div>
+        <div class="ct-tag-cloud">
+          <div class="ct-tag-cloud-tags">
+            {{ tagcloud({min_font: 12, max_font: 30, amount: 200, color: true, start_color: '#ccc', end_color: '#111'}) }}
+          </div>
+        </div>
+      </div>
     {% else %}
+      {% include '_partials/page-header.swig' %}
       {{ page.content }}
     {% endif %}
   </div>

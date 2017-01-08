@@ -1,0 +1,45 @@
+.ct-all-page {
+    display: flex;
+    a {
+        text-decoration: none;
+    }
+}
+
+.ct-category-all-page {
+  width: 40%;
+
+  .ct-category-all {
+      margin-top: 20px;
+  }
+
+  .category-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .category-list-item { margin: 5px 10px; }
+
+  .category-list-count {
+    color: $grey;
+    &:before {
+      display: inline;
+      content: " ("
+    }
+    &:after {
+      display: inline;
+      content: ") "
+    }
+  }
+
+  .ct-category-list-child { padding-left: 10px; }
+}
+
+.ct-tag-cloud {
+  text-align: center;
+
+  a {
+    display: inline-block;
+    margin: 10px;
+  }
+}
