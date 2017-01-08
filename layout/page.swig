@@ -15,7 +15,7 @@
 
 {% block content %}
 
-  <div id="posts" class="posts-expand">
+  <div id="posts">
     {# tagcloud page support #}
     {% if page.type === "tags" %}
       <div class="tag-cloud">
@@ -38,11 +38,18 @@
     {% elif page.type === 'categories_and_tags' %}
       <div class="ct-all-page">
         <div class="ct-category-all-page">
+          <div class="ct-category-all-title">
+              {{ _p('counter.categories', site.categories.length) }}
+          </div>
           <div class="ct-category-all">
             {{ list_categories() }}
           </div>
         </div>
+        <hr>
         <div class="ct-tag-cloud">
+          <div class="ct-tag-cloud-title">
+              {{ _p('counter.tag_cloud', site.tags.length) }}
+          </div>
           <div class="ct-tag-cloud-tags">
             {{ tagcloud({min_font: 12, max_font: 30, amount: 200, color: true, start_color: '#ccc', end_color: '#111'}) }}
           </div>
