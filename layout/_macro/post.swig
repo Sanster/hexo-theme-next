@@ -233,13 +233,13 @@
           <!--/noindex-->
         {% else %}
           {% if post.type === 'picture' %}
-            <a href="{{ url_for(post.path) }}">{{ post.content }}</a>
+            <a href="{{ url_for(post.path) }}">{{ page_anchor(post.content) }}</a>
           {% else %}
-            {{ post.content }}
+            {{ page_anchor(post.content) }}
           {% endif %}
         {% endif %}
       {% else %}
-        {{ post.content }}
+        {{ page_anchor(post.content) }}
       {% endif  %}
     </div>
 
