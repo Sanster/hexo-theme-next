@@ -34,7 +34,7 @@ menu:
   home: /
   # categories: /categories
   #about: /about
-  # archives: /archives
+  archives: /archives
   # tags: /tags
   tags: /categories_and_tags
   #sitemap: /sitemap.xml
@@ -380,7 +380,7 @@ calendar:
 
 # Algolia Search
 algolia_search:
-  enable: true
+  enable: false
   hits:
     per_page: 10
   labels:
