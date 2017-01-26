@@ -39,13 +39,24 @@
 
 h1, h2, h3, h4, h5, h6 {
   position: relative !important;
+  padding-left: 25px;
+  left: -25px;
+}
+
+.article-heading {
+  &:hover {
+    .article-anchor {
+      visibility: visible;
+    }
+  }
 }
 
 .article-anchor {
   position: absolute
-  left: -25px
+  left: 0px
   color: RGB(234, 64, 32)
   border-bottom: 0px
+  visibility: hidden;
 
   &:before {
     content: "#"
