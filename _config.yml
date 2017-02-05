@@ -36,6 +36,7 @@ menu:
   archives: /archives
   # tags: /tags
   tags: /categories_and_tags
+  # links: /links
   about: /about
   #sitemap: /sitemap.xml
   #commonweal: /404.html
@@ -51,6 +52,7 @@ menu_icons:
   #KeyMapsToMenuItemKey: NameOfTheIconFromFontAwesome
   home: home
   about: user
+  links: link
   categories: th
   schedule: calendar
   tags: tags
@@ -199,7 +201,7 @@ sidebar:
 scroll_to_more: true
 
 # Automatically excerpt description in homepage as preamble text.
-excerpt_description: true
+excerpt_description: false
 
 # Automatically Excerpt. Not recommand.
 # Please use <!-- more --> in the post to control excerpt accurately.
