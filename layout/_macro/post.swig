@@ -57,15 +57,15 @@
               {% endif %}
             {% endif %}
           </h1>
+          <h4 class="post-sub-title">
+              {% if post.sub_title %}
+                {{ post.sub_title }}
+              {% endif %}
+          </h4>
         {% endif %}
 
 
         <div class="post-meta">
-          {% if post.description and (not theme.excerpt_description or not is_index) %}
-              <div class="post-description">
-                  {{ post.description }}
-              </div>
-          {% endif %}
           <span class="post-time">
             {% if theme.post_meta.created_at %}
               <span class="post-meta-item-icon">
@@ -173,6 +173,12 @@
             <span class="page-pv">{{ theme.busuanzi_count.page_pv_header }}
             <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>{{ theme.busuanzi_count.page_pv_footer }}
             </span>
+          {% endif %}
+
+          {% if post.description and (not theme.excerpt_description or not is_index) %}
+              <div class="post-description">
+                  {{ post.description }}
+              </div>
           {% endif %}
 
         </div>
