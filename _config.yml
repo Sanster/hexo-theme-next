@@ -132,6 +132,9 @@ font:
 # Value is the target link (E.g. GitHub: https://github.com/iissnan)
 social:
   GitHub: https://github.com/Sanster
+  GitLab: https://gitlab.com/sanster
+  CodePen: http://codepen.io/Sanster/
+  Twitter: https://twitter.com/ChuWeiqing
 
 
 # Social Links Icons
@@ -144,6 +147,8 @@ social_icons:
   # Icon Mappings.
   # KeyMapsToSocalItemKey: NameOfTheIconFromFontAwesome
   GitHub: github
+  GitLab: gitlab
+  CodePen: codepen
   Twitter: twitter
   Weibo: weibo
 
